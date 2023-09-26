@@ -1,0 +1,34 @@
+---
+version: '3.8'
+services:
+  keycloak-import:
+    image: quay.io/keycloak/keycloak:22.0.3
+    command:
+      - import
+      - --optimized
+      - --dir=/realm-config
+      - --override=true
+    volumes:
+      - ./data:/realm-config
+      - kcdata:/opt/keycloak/data
+    networks:
+      keycloak:
+  keycloak:
+    image: quay.io/keycloak/keycloak:22.0.3
+    hostname: keycloak
+    command:
+      - start-dev
+      - --db=dev-file
+    volumes:
+      - kcdata:/opt/keycloak/data
+    ports:
+      - 8180:8080
+    networks:
+      keycloak:
+    depends_on:
+      keycloak-import:
+        condition: service_completed_successfully
+volumes:
+  kcdata:
+networks:
+  keycloak: {}

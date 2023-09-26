@@ -1,0 +1,26 @@
+{
+  "realm" : "master",
+  "users" : [ {
+    "id" : "af9ec8bb-ba2c-440e-8345-caf56747371c",
+    "createdTimestamp" : 1637859075603,
+    "username" : "admin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "credentials" : [ {
+      "id" : "0234883b-4c95-43b5-8b60-4bcc029ac6df",
+      "type" : "password",
+      "createdDate" : 1637859075738,
+      "secretData" : "{\"value\":\"gz5wSJYMmFQYC7YxYq2FITouf4jNjuOjWd3nJzm18p0u4ll2HU4yz2SW+8/k0wF/L/ZtYang6SFhgLSxVLV/jw==\",\"salt\":\"FPfb2j5PTSi6rOfGML+kmA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "uma_authorization", "offline_access", "admin" ],
+    "clientRoles" : {
+      "account" : [ "view-profile", "manage-account" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
