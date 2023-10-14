@@ -15,7 +15,8 @@ docker-compose up
 - Keycloak URL: [http://localhost:8180](http://localhost:8180)
 - Discovery Url: [http://localhost:8180/realms/magnolia-sso/.well-known/openid-configuration](http://localhost:8180/realms/magnolia-sso/.well-known/openid-configuration)
 - Admin user: `admin/admin`
-- Demo user: `ssouser/ssouser`
+- Realm: `magnolia-sso`
+  * Demo user: `ssouser/ssouser`
 
 ### Magnolia 
 
