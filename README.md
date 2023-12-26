@@ -4,7 +4,7 @@
 
 ### Keycloak
 
-Version: [22.0.3](https://www.keycloak.org/2023/09/keycloak-2203-released.html)
+Version: `23.0.3`
 
 Spin up Keycloak server with pre-configured realm/client/users for Magnolia SSO
 

@@ -2,7 +2,7 @@
 version: '3.8'
 services:
   keycloak-import:
-    image: quay.io/keycloak/keycloak:22.0.3
+    image: quay.io/keycloak/keycloak:23.0.3
     command:
       - import
       - --optimized
@@ -14,7 +14,7 @@ services:
     networks:
       keycloak:
   keycloak:
-    image: quay.io/keycloak/keycloak:22.0.3
+    image: quay.io/keycloak/keycloak:23.0.3
     hostname: keycloak
     command:
       - start-dev
