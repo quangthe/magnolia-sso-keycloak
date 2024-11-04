@@ -2,10 +2,9 @@
 version: '3.8'
 services:
   keycloak-import:
-    image: quay.io/keycloak/keycloak:23.0.3
+    image: quay.io/keycloak/keycloak:26.0.5
     command:
       - import
-      - --optimized
       - --dir=/realm-config
       - --override=true
     volumes:
@@ -14,7 +13,7 @@ services:
     networks:
       keycloak:
   keycloak:
-    image: quay.io/keycloak/keycloak:23.0.3
+    image: quay.io/keycloak/keycloak:26.0.5
     hostname: keycloak
     command:
       - start-dev

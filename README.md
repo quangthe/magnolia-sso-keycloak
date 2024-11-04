@@ -4,7 +4,7 @@
 
 ### Keycloak
 
-Version: `23.0.3`
+Version: `26.0.5`
 
 Spin up Keycloak server with pre-configured realm/client/users for Magnolia SSO
 
@@ -21,7 +21,7 @@ docker-compose up
 ### Magnolia 
 
 Tested with:
-- Magnolia CMS: [`6.2.39`](https://docs.magnolia-cms.com/product-docs/6.2/Releases/Release-notes-for-Magnolia-CMS-6.2.39.html)
+- Magnolia CMS: [`6.2.52`](https://docs.magnolia-cms.com/product-docs/6.2/releases/release-notes-for-magnolia-cms-6.2.52/)
 - magnolia-sso module: [`3.1.7`](https://docs.magnolia-cms.com/magnolia-sso/3.1.7/index.html)
 
 Edit magnolia-sso config.yaml file: `<light-modules-dir>/magnolia-sso/config.yaml`
